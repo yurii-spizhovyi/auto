@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import requests
 import json
 import os
-from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.select import Select
 
 
 class TestUserCreateThenLoginThenCarAddAndAfterAllDelete:
@@ -54,6 +54,10 @@ class TestUserCreateThenLoginThenCarAddAndAfterAllDelete:
         # put mileage
         mileage = self.driver.find_element(By.ID, "addCarMileage")
         mileage.send_keys("100000")
+        # select model
+        drop_down_select_brand = self.driver.find_element(By.ID, "addCarModel")
+        select_brand = Select(drop_down_select_brand)
+        select_brand.select_by_index(1)
         # add car
         add_button = self.driver.find_element(By.XPATH, "//button[text()='Add']")
         add_button.click()
