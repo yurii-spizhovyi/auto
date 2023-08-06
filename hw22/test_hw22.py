@@ -19,7 +19,6 @@ class TestUserCreateThenLoginThenCarAddAndAfterAllDelete:
             self.json_data = json.load(config)
         self.email = self.json_data['email']
         self.password = self.json_data['password']
-        self.session = requests.Session()  # Create a session to persist cookies
 
     def test_registration_user(self):
         """
