@@ -18,6 +18,16 @@ class TestUserCreateThenLoginThenCarAddAndAfterAllDelete:
         self.email = self.json_data['email']
         self.password = self.json_data['password']
 
+    def teardown_class(self):
+        user_to_delete = {
+            "email": self.email,
+            "password": self.password,
+            "remember": False
+        }
+
+        self.session.post(url="https://qauto2.forstudy.space/api/auth/signin", json=user_to_delete)
+        self.session.delete("https://qauto2.forstudy.space/api/users")
+
     def test_registration_user(self):
         result = self.session.post(url='https://qauto2.forstudy.space/api/auth/signup', json=self.json_data)
         assert result.json()["status"] == "ok"
@@ -69,7 +79,3 @@ class TestUserCreateThenLoginThenCarAddAndAfterAllDelete:
         delete_car_url = f"https://qauto2.forstudy.space/api/cars/{car_id}"
         delete_car = self.session.delete(url=delete_car_url)
         assert delete_car.json()["status"] == "ok"
-
-    def test_delete_user(self):
-        delete_user = self.session.delete(url="https://qauto2.forstudy.space/api/users/")
-        assert delete_user.json()["status"] == "ok"
