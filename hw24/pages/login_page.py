@@ -1,8 +1,8 @@
 from selenium.webdriver.common.by import By
 
-from hw23.controls.text_box import TextBox
-from hw23.controls.button import Button
-from hw23.pages.base_page import BasePage
+from hw24.controls.text_box import TextBox
+from hw24.controls.button import Button
+from hw24.pages.base_page import BasePage
 from .base_page import BasePage
 
 

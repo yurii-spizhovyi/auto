@@ -1,4 +1,4 @@
-from hw23.driver.custom_driver import Driver
+from hw24.driver.custom_driver import Driver
 
 
 class BasePage:

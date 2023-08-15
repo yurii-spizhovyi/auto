@@ -1,11 +1,11 @@
 import os
 import json
 
-from hw23.api.delete_car import DeleteCar
-from hw23.constants.api_path_constants import POST_SIGN_IN_USER, DELETE_USER, POST_SIGN_UP_USER
-from hw23.constants.url_constants import DEFAULT_API_URL
-from hw23.constants.user_credentials import USER_EMAIL, USER_PASSWORD
-from hw23.tests.test_base import TestBase
+from hw24.api.delete_car import DeleteCar
+from hw24.constants.api_path_constants import POST_SIGN_IN_USER, DELETE_USER, POST_SIGN_UP_USER
+from hw24.constants.url_constants import DEFAULT_API_URL
+from hw24.constants.user_credentials import USER_EMAIL, USER_PASSWORD
+from hw24.tests.test_base import TestBase
 
 
 class TestAddCar(TestBase):

@@ -3,10 +3,10 @@ import os
 
 from selenium.webdriver.chrome import webdriver
 
-from hw23.constants.url_constants import DEFAULT_URL
-from hw23.driver.custom_driver import Driver
-from hw23.facades.add_car_facade import AddCar
-from hw23.facades.login_facade import LoginFacade
+from hw24.constants.url_constants import DEFAULT_URL
+from hw24.driver.custom_driver import Driver
+from hw24.facades.add_car_facade import AddCar
+from hw24.facades.login_facade import LoginFacade
 
 
 class TestBase:

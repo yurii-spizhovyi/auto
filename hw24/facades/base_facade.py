@@ -1,6 +1,6 @@
-from hw23.pages.login_page import LoginPage
-from hw23.pages.navigation_bar_page import NavigationBarPage
-from hw23.pages.add_car_page import AddCar
+from hw24.pages.login_page import LoginPage
+from hw24.pages.navigation_bar_page import NavigationBarPage
+from hw24.pages.add_car_page import AddCar
 
 
 class BaseFacade:

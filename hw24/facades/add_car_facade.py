@@ -1,5 +1,5 @@
-from hw23.constants.car_data import DEFAULT_MILEAGE
-from hw23.facades.base_facade import BaseFacade
+from hw24.constants.car_data import DEFAULT_MILEAGE
+from hw24.facades.base_facade import BaseFacade
 
 
 class AddCar(BaseFacade):

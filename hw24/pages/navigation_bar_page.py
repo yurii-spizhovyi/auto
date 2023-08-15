@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from hw23.controls.button import Button
-from hw23.pages.base_page import BasePage
+from hw24.controls.button import Button
+from hw24.pages.base_page import BasePage
 
 
 class NavigationBarPage(BasePage):

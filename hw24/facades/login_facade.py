@@ -1,5 +1,5 @@
-from hw23.constants.user_credentials import USER_EMAIL, USER_PASSWORD
-from hw23.facades.base_facade import BaseFacade
+from hw24.constants.user_credentials import USER_EMAIL, USER_PASSWORD
+from hw24.facades.base_facade import BaseFacade
 
 
 class LoginFacade(BaseFacade):
