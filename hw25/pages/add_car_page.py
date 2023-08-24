@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-from hw24.controls.button import Button
-from hw24.controls.text_box import TextBox
-from hw24.pages.base_page import BasePage
+from hw25.controls.button import Button
+from hw25.controls.text_box import TextBox
+from hw25.pages.base_page import BasePage
 
 
 class AddCar(BasePage):

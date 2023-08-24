@@ -1,7 +1,7 @@
-from hw24.constants.api_path_constants import DELETE_CARS
-from hw24.constants.url_constants import DEFAULT_API_URL
+from hw25.constants.api_path_constants import DELETE_CARS
+from hw25.constants.url_constants import DEFAULT_API_URL
 
-from hw24.tests.test_base import TestBase
+from hw25.tests.test_base import TestBase
 
 
 class DeleteCar(TestBase):
