@@ -105,11 +105,18 @@ if __name__ == '__main__':
     employee_repo = EmployeeRepo()
     project_repo = ProjectRepo()
 
-    #Create Titles
+    # Create Titles
     # title_repo.create("CTO")
     # titles = title_repo.get_all()
     # for title in titles:
     #     print(title)
+
+    # Delete Title
+    # title_repo.delete_by_id(2)
+    # titles = title_repo.get_all()
+    # for title in titles:
+    #     print(title)
+
 
     # Create Employees
     # titles = title_repo.get_all()
@@ -126,16 +133,22 @@ if __name__ == '__main__':
     #     print(employee)
     #
     # # Create Projects
-    try:
-        project_repo.create("New ERP project", 8, 19)
-        print("Project created successfully.")
-    except pony.orm.core.TransactionIntegrityError as e:
-        if "Key (employee_id)=" in str(e) and "is not present in table \"employees\"" in str(e):
-            print("Error: Employee with the specified ID does not exist.")
-        else:
-            # Handle other types of integrity errors
-            print(
-                "Error: Failed to create the project due to an integrity error.")
+    # try:
+    #     project_repo.create("New ERP project", 8, 19)
+    #     print("Project created successfully.")
+    # except pony.orm.core.TransactionIntegrityError as e:
+    #     if "Key (employee_id)=" in str(e) and "is not present in table \"employees\"" in str(e):
+    #         print("Error: Employee with the specified ID does not exist.")
+    #     else:
+    #         # Handle other types of integrity errors
+    #         print(
+    #             "Error: Failed to create the project due to an integrity error.")
+    # projects = project_repo.get_all()
+    # for project in projects:
+    #     print(project)
+
+    # Update Project
+    project_repo.update_name_by_id(8, "AutoMotive ERP")
     projects = project_repo.get_all()
     for project in projects:
-        print(project)
+        print(project.name)
